@@ -88,8 +88,7 @@ Pygments
 pyparsing                 
 python-dateutil           
 python-json-logger        
-pytz                                     
-pywinpty                  
+pytz                                                       
 PyYAML                    
 pyzmq                     
 qtconsole                 
