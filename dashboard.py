@@ -87,9 +87,9 @@ datetime_columns = ["order_approved_at"]
 all_df.sort_values(by="order_approved_at", inplace=True)
 all_df.reset_index(inplace=True)
 
-format_waktu = "ISO8601"
+# format_waktu = "ISO8601"
 for column in datetime_columns:
-    all_df[column] = pd.to_datetime(all_df[column], format=format_waktu)
+    all_df[column] = pd.to_datetime(all_df[column], format="mixed")
 
 min_date = all_df["order_approved_at"].min()
 max_date = all_df["order_approved_at"].max() + pd.Timedelta(days=1)
